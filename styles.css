@@ -31,10 +31,10 @@ header {
 }
 ul {
   position: absolute;
-  top: 54px;
+  top: -9999em;
   right: 0;
   width: 150px;
-  display: none;
+  opacity: 0;
   margin: 0;
   padding: 0;
   color: black;
@@ -46,8 +46,9 @@ ul li:hover {
   cursor: pointer;
 }
 .language i:hover ul {
-  display: block;
-  transition: 0.2s;
+  opacity: 1;
+  transition: 0.3s opacity;
+  top: 54px;
 }
 li {
   padding: 6px
